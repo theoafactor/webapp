@@ -10,8 +10,10 @@ class Menu extends React.Component{
 
     render(){
 
-        this.props.getMenuProp(1234567)
+        //this.props.getMenuProp(1234567)
+        this.props.userobject.firstname = "Ahmed";
 
+        this.props.getMenuProps("hello from child")
 
         return (
             <div>

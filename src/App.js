@@ -1,33 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-import Menu from "./Menu";
+import React from "react";
+import Nav from "./Components/Nav/Nav";
+import Banner from "./Components/Banner/Banner";
+import Movies from "./Components/Movies/Movies";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+class App extends React.Component{
 
-function App() {
+    constructor(){
+      super()
+    }
 
 
-  const user = {
-    firstname: 'James',
-    lastname: "John",
-    email: "james@email.com"
-  }
+    render(){
+        return (
+          <React.Fragment>
+            <Nav />
+            <div className="container-fluid">
+            <Banner />
+            <Movies />
+            </div>
+          </React.Fragment>
+          
+        )
+    }
 
-  const active_note = {
-      title: "Happiness",
-      content: "Happiness is free"
-  }
 
-  function getMenuItems(data){
-      alert(data)
-  }
 
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Menu getMenuProp={getMenuItems} userobject={user} noteobject={active_note}/>
-      </header>
-    </div>
-  );
 }
+
 
 export default App;
