@@ -3,13 +3,14 @@ import "./Nav.css"
 export default function Nav(){
 
     return (
-        <nav className='nav-menu'>
-            <NavLink to='/'>Home</NavLink>
-            <NavLink to='/about-us'>About Us</NavLink>
-            <NavLink to='/contact-us'>Contact Us</NavLink>
-            <NavLink to='/register'>Register</NavLink>
-            <input />
-        </nav>
+        <div className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+  <h5 className="my-0 mr-md-auto font-weight-normal">MoviesHub</h5>
+  <nav className="my-2 my-md-0 mr-md-3">
+    <a className="p-2 text-dark" href="#">How it works</a>
+    <a className="p-2 text-dark" href="#">Collections</a>
+  </nav>
+  <a className="btn btn-outline-primary" href="#">Log in</a>
+</div>
     )
 
 

@@ -5,10 +5,11 @@ class PageNotFound extends React.Component{
         super(props)
 
         this.props = props;
-         
         this.props.showNavProp();
 
     }
+
+   
 
 
     render(){
